@@ -1,0 +1,18 @@
+body {
+    font-family: Arial;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1597007066708-3c1f4c5c8d8b');
+    background-size: cover;
+    color: white;
+    padding: 120px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
