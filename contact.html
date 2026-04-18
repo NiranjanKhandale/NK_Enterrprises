@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - NK Enterprises</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+<div class="container">
+    <a class="navbar-brand">NK Enterprises</a>
+    <div>
+         <a href="index.html" class="text-white m-2">Home</a>
+        <a href="services.html" class="text-white m-2">Services</a>
+        <a href="contact.html" class="text-white m-2">Contact</a>
+        <a href="pricing.html" class="text-white m-2">Pricing</a>
+        <a href="about.html" class="text-white m-2">About</a>
+    </div>
+</div>
+</nav>
+
+<div class="container my-5">
+
+<h2 class="text-center">Book a Machine</h2>
+
+<form onsubmit="sendToWhatsApp(); return false;">
+
+<div class="mb-3">
+<input type="text" id="name" class="form-control" placeholder="Your Name" required>
+</div>
+
+<div class="mb-3">
+<input type="text" id="phone" class="form-control" placeholder="Phone Number" required>
+</div>
+
+<div class="mb-3">
+<select id="machine" class="form-control">
+<option>JCB</option>
+<option>Dynapac Roller</option>
+<option>Case Roller</option>
+<option>Soil Compactor</option>
+<option>AJAX ARGO 2500</option>
+<option>Hywa</option>
+<option>Floater</option>
+<option>Tractor</option>
+<option>Dhumas</option>
+</select>
+</div>
+
+<div class="mb-3">
+<textarea id="details" class="form-control" placeholder="Project Details"></textarea>
+</div>
+
+
+<input type="text" id="location" class="form-control mb-2" placeholder="Work Location" required>
+
+<br>
+<button class="btn btn-warning w-100">Send Booking</button>
+
+</form>
+
+<br>
+
+<p class="text-center">📞 9657897711</p>
+
+<a href="https://wa.me/919657897711" class="btn btn-success w-100">Connect via WhatsApp</a>
+
+</div>
+
+
+<div class="business-info">
+<h5>Business Details</h5>
+
+<p><strong>🏢 NK Enterprises</strong></p>
+<p>📍Chakan Chowk Shikrapur,Pune,Maharastra 412-208 </p>
+<p>📞 9657897711</p>
+<p>📧 nkenterprises@gmail.com</p>
+<p>🧾 GSTIN: 27EAQPK7367Q1ZG</p>
+
+</div>
+<!-- WhatsApp Script -->
+<script>
+function sendToWhatsApp() {
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let location = document.getElementById("location").value;
+let machine = document.getElementById("machine").value;
+let details = document.getElementById("details").value;
+
+let message = `New Booking:%0AName: ${name}%0APhone: ${phone}%0ALocation: ${location}%0AMachine: ${machine}%0ADetails: ${details}`;
+
+let url = "https://wa.me/919657897711?text=" + message;
+
+window.open(url, '_blank');
+}
+</script>
+
+<footer class="bg-dark text-white text-center p-3">
+<p>© 2026 NK Enterprises</p>
+<p>📞 9657897711 | 📧 nkenterprises@gmail.com</p>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
